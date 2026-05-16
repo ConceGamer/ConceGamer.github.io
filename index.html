@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo Conce Gamer</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="styles.css?=3">
+    <link rel="icon" href="images/joystick.png" type="image">
+</head>
+<body>
+    <div class="container-fluid">
+        <!-- Encabezado con logo -->
+        <header class="row py-3 mb-4 title-container">
+            <h1 class="titulo">Conce Gamer</h1>
+        </header>
+
+        <!-- Catálogo con secciones desplegables -->
+        <div class="row">
+            <div class="col-12">
+                <div class="accordion" id="catalogoAccordion">
+                    <!-- Secciones del catálogo se generarán dinámicamente con JavaScript -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Nueva sección de Garantías -->
+        <!-- Nueva sección de Garantías -->
+<div class="row mt-5">
+    <div class="col-12">
+        <h2 class="text-center mb-4" style="color: var(--morado);">
+            <i class="fas fa-shield-alt"></i> Garantías
+        </h2>
+        <div class="accordion" id="garantiasAccordion">
+            <!-- Garantía 1 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="garantiaHeading1">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#garantiaCollapse1" aria-expanded="false" aria-controls="garantiaCollapse1">
+                        Garantía de Cuentas
+                    </button>
+                </h2>
+                <div id="garantiaCollapse1" class="accordion-collapse collapse" aria-labelledby="garantiaHeading1" data-bs-parent="#garantiasAccordion">
+                    <div class="accordion-body text-center">
+                        <img src="images3/5.jpeg" alt="Garantía de Calidad" class="img-fluid garantia-img" onerror="this.src='https://via.placeholder.com/600x400?text=Garantia+de+Calidad'">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Garantía 2 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="garantiaHeading2">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#garantiaCollapse2" aria-expanded="false" aria-controls="garantiaCollapse2">
+                        Garantía de productos varios
+                    </button>
+                </h2>
+                <div id="garantiaCollapse2" class="accordion-collapse collapse" aria-labelledby="garantiaHeading2" data-bs-parent="#garantiasAccordion">
+                    <div class="accordion-body text-center">
+                        <img src="images3/4.jpeg" alt="Soporte Técnico" class="img-fluid garantia-img" onerror="this.src='https://via.placeholder.com/600x400?text=Soporte+Tecnico'">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Garantía 3 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="garantiaHeading3">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#garantiaCollapse3" aria-expanded="false" aria-controls="garantiaCollapse3">
+                        Garantía de Software Windows
+                    </button>
+                </h2>
+                <div id="garantiaCollapse3" class="accordion-collapse collapse" aria-labelledby="garantiaHeading3" data-bs-parent="#garantiasAccordion">
+                    <div class="accordion-body text-center">
+                        <img src="images3/3.jpeg" alt="Garantía de Devolución" class="img-fluid garantia-img" onerror="this.src='https://via.placeholder.com/600x400?text=Garantia+de+Devolucion'">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Garantía 4 (CORREGIDA) -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="garantiaHeading4">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#garantiaCollapse4" aria-expanded="false" aria-controls="garantiaCollapse4">
+                        Garantía de Juegos Digitales
+                    </button>
+                </h2>
+                <div id="garantiaCollapse4" class="accordion-collapse collapse" aria-labelledby="garantiaHeading4" data-bs-parent="#garantiasAccordion">
+                    <div class="accordion-body text-center">
+                        <img src="images3/2.jpeg" alt="Envío Garantizado" class="img-fluid garantia-img" onerror="this.src='https://via.placeholder.com/600x400?text=Envio+Garantizado'">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Garantía 5 (CORREGIDA) -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="garantiaHeading5">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#garantiaCollapse5" aria-expanded="false" aria-controls="garantiaCollapse5">
+                        Pérdida de garantía
+                    </button>
+                </h2>
+                <div id="garantiaCollapse5" class="accordion-collapse collapse" aria-labelledby="garantiaHeading5" data-bs-parent="#garantiasAccordion">
+                    <div class="accordion-body text-center">
+                        <img src="images3/1.jpeg" alt="Pago Seguro" class="img-fluid garantia-img" onerror="this.src='https://via.placeholder.com/600x400?text=Pago+Seguro'">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <!-- Carrito de compras -->
+        <div class="row mt-5">
+            <div class="col-12">
+                <h2 class="text-center mb-4"><i class="fas fa-shopping-cart"></i> Carrito de Compras</h2>
+                <div class="table-responsive">
+                    <table class="table table-bordered" id="carrito">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>Producto</th>
+                                <th>Precio</th>
+                                <th>Cantidad</th>
+                                <th>Subtotal</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody id="items-carrito">
+                            <!-- Los items del carrito se agregarán aquí -->
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="3" class="carrito-text text-end fw-bold">Total:</td>
+                                <td colspan="2" class="carrito-text fw-bold" id="total-carrito">$0</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+                <div class="text-center mt-3">
+                    <button class="btn btn-success" id="enviar-whatsapp">
+                        <i class="fab fa-whatsapp"></i> Enviar pedido por WhatsApp
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mensaje de añadido al carrito -->
+        <div class="toast-container position-fixed bottom-0 end-0 p-3">
+            <div id="toast-anadido" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header bg-success text-white">
+                    <strong class="me-auto">¡Éxito!</strong>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body">
+                    Artículo añadido satisfactoriamente
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer con redes sociales y contacto -->
+        <footer class="row mt-5 py-4 bg-light">
+            <div class="col-12 text-center">
+                <h3 class="dudas">¿Dudas?, Contáctanos:</h3>
+                <h1 class="flecha">↓</h1>
+                <div class="social-icons my-3">
+                    <a href="https://wa.me/56940347452" class="text-decoration-none mx-2">
+                        <i class="fab fa-whatsapp fa-2x text-success wazha1"></i>
+                    </a>
+                    <a href="https://wa.me/56984152861" class="text-decoration-none mx-2">
+                        <i class="fab fa-whatsapp fa-2x wazha2"></i>
+                    </a>
+                    <a href="https://www.instagram.com/concegamer?igsh=MThiYWVxb2w5cjJ2aA==" class="text-decoration-none mx-2">
+                        <i class="fab fa-instagram fa-2x text-danger"></i>
+                    </a>
+                </div>
+                <p class="footer-last text-muted">© 2026 Seba Store. Todos los derechos reservados.</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Bootstrap JS y dependencias -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JavaScript personalizado -->
+    <script src="script.js?v=6.5"></script>
+</head>
+<body>
